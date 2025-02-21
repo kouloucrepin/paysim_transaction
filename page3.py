@@ -9,6 +9,10 @@ import dash
 
 layout = html.Div([
     html.Div([
+        html.Div([
+    html.Button("Télécharger le Rapport", id="btn-download",style={'color': 'white','text-align': 'left'}),
+    dcc.Download(id="download")
+    ]),
     html.H1("Contexte", style={'color': 'green','text-align': 'right'}),
     html.H4(
         "Il existe un manque de datasets publics disponibles sur les services financiers, en particulier dans le domaine émergent des transactions d'argent mobile. "
@@ -98,3 +102,11 @@ layout = html.Div([
           # Hauteur de la page (100% de la vue)
     })
 
+
+@app.callback(
+    Output("download", "data"),
+    Input("btn-download", "n_clicks"),
+    prevent_initial_call=True
+)
+def download_file(n_clicks):
+    return dcc.send_file("Initiation à SPSS.pdf")
