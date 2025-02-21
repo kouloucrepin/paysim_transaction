@@ -15,65 +15,56 @@ import plotly.express as px
 personnes = [
     {
         "nom": "KOULOU Anaklasse crepin",
-        "role": "Software Engineer",
+        "role": "Concepteur du Dashboard",
         "email": "mamipash@example.com",
-        "twitter": "@Mamipash",
         "photo": "/assets/profis/crepin.png"
     },
     {
         "nom": "Christian TEYANBAYE BERTORNGAÏ",
-        "role": "Data Scientist",
-        "email": "johndoe@example.com",
-        "twitter": "@JohnDoe",
+        "role": "Assistant concepteur",
+        "email": "alicejohnson@example.com",
         "photo": "/assets/profis/chistian.png"
     },
     {
-        "nom": "Assa Allo",
-        "role": "Product Manager",
+        "nom": "ASSA Allo",
+        "role": "Conseiller concepteur",
         "email": "janesmith@example.com",
-        "twitter": "@JaneSmith",
         "photo": "/assets/profis/allo.png"
     },
     {
-        "nom": "DOMEVENOU KOMLA Wisdom",
-        "role": "Designer",
+        "nom": "DOMEVENOU Komla Wisdom",
+        "role": "Analyste des données",
         "email": "alicejohnson@example.com",
-        "twitter": "@AliceJohnson",
         "photo": "/assets/profis/wisdom.png" 
     },
     {
         "nom": "AZONFACK Myriam Dolvianne",
-        "role": "Analyst",
+        "role": "Cheffe de groupe",
         "email": "bobbrown@example.com",
-        "twitter": "@BobBrown",
         "photo": "/assets/profis/azonfack.png"
     },
     {
         "nom": "OGNIMBA sadri",
-        "role": "Developer",
+        "role": "Chargé de coordination",
         "email": "charliedavis@example.com",
-        "twitter": "@CharlieDavis",
         "photo": "/assets/profis/sadri.png"
     },
     {
         "nom": "SEYDOU Ferdinand",
-        "role": "Developer",
+        "role": "Chargé des ressources",
         "email": "charliedavis@example.com",
-        "twitter": "@CharlieDavis",
         "photo": "/assets/profis/seydou.png"
     },
     {
         "nom": "leonard FOUDA MANGA",
-        "role": "Developer",
+        "role": "Chargé des ressources",
         "email": "charliedavis@example.com",
-        "twitter": "@CharlieDavis",
         "photo": "/assets/profis/manga.png"
     },
     {
         "nom": "AMBASSA LUMIERE",
-        "role": "Developer",
+        "role": "Chargé des ressources",
         "email": "charliedavis@example.com",
-        "twitter": "@CharlieDavis",
         "photo": "/assets/profis/ambassa.png"
     },
 ]
@@ -93,7 +84,7 @@ profils = [
                                 html.P(person["role"]),
                                 html.A(person["email"], href=f'mailto:{person["email"]}'),
                                 html.Br(),
-                                html.A(person["twitter"], href=f'https://twitter.com/{person["twitter"].lstrip("@")}', target="_blank")
+                                #html.A(person["twitter"], href=f'https://twitter.com/{person["twitter"].lstrip("@")}', target="_blank")
                             ]),style={'margin-left':'15%'}
                         )
                     ])
