@@ -16,55 +16,55 @@ personnes = [
     {
         "nom": "KOULOU Anaklasse crepin",
         "role": "Concepteur du Dashboard",
-        "email": "mamipash@example.com",
+        "linkeding": "https://www.linkedin.com/in/crepin-koulou-912aa5248",
         "photo": "/assets/profis/crepin.png"
     },
     {
         "nom": "Christian TEYANBAYE BERTORNGAÏ",
         "role": "Assistant concepteur",
-        "email": "alicejohnson@example.com",
+        "linkeding": "https://www.linkedin.com/in/christian-teyanbaye-berto",
         "photo": "/assets/profis/chistian.png"
     },
     {
         "nom": "ASSA Allo",
         "role": "Conseiller concepteur",
-        "email": "janesmith@example.com",
+        "linkeding": "https://www.linkedin.com/in/assa-allo-638512261",
         "photo": "/assets/profis/allo.png"
     },
     {
         "nom": "DOMEVENOU Komla Wisdom",
         "role": "Analyste des données",
-        "email": "alicejohnson@example.com",
+        "linkeding": "https://www.linkedin.com/in/wisdom-komla-domevenou-a3aaa21a2",
         "photo": "/assets/profis/wisdom.png" 
     },
     {
         "nom": "AZONFACK Myriam Dolvianne",
         "role": "Cheffe de groupe",
-        "email": "bobbrown@example.com",
+        "linkeding": "https://www.linkedin.com/in/myriam-dolvianne-azonfack-5ba872340",
         "photo": "/assets/profis/azonfack.png"
     },
     {
         "nom": "OGNIMBA sadri",
         "role": "Chargé de coordination",
-        "email": "charliedavis@example.com",
+        "linkeding": "https://www.linkedin.com/in/sadri-ognimba-3244a9253",
         "photo": "/assets/profis/sadri.png"
     },
     {
         "nom": "SEYDOU Ferdinand",
         "role": "Chargé des ressources",
-        "email": "charliedavis@example.com",
+        "linkeding": "https://www.linkedin.com/in/ferdinand-seydou-30b780170",
         "photo": "/assets/profis/seydou.png"
     },
     {
         "nom": "leonard FOUDA MANGA",
         "role": "Chargé des ressources",
-        "email": "charliedavis@example.com",
+        "linkeding": "https://www.linkedin.com/in/ferdinand-seydou-30b780170",
         "photo": "/assets/profis/manga.png"
     },
     {
         "nom": "AMBASSA LUMIERE",
         "role": "Chargé des ressources",
-        "email": "charliedavis@example.com",
+        "linkeding": "https://www.linkedin.com/in/samuel-lumi%C3%A8re-ambassa-077512341",
         "photo": "/assets/profis/ambassa.png"
     },
 ]
@@ -82,7 +82,7 @@ profils = [
                             html.Div([
                                 html.H4(person["nom"]),
                                 html.P(person["role"]),
-                                html.A(person["email"], href=f'mailto:{person["email"]}'),
+                                html.A(person["linkeding"], href=person["linkeding"]),
                                 html.Br(),
                                 #html.A(person["twitter"], href=f'https://twitter.com/{person["twitter"].lstrip("@")}', target="_blank")
                             ]),style={'margin-left':'15%'}
