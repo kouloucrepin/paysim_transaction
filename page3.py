@@ -109,4 +109,4 @@ layout = html.Div([
     prevent_initial_call=True
 )
 def download_file(n_clicks):
-    return dcc.send_file("PROJET_BIG_DATA_GROUPE_4.pdf")
+    return dcc.send_file("Rapport_BigData_Gp_7.pdf")
